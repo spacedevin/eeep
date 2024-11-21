@@ -1,0 +1,41 @@
+export interface OutlineState {
+  rows: Map<number, {
+    level: number;
+    collapsed: boolean;
+    hidden: boolean;
+    summaryBelow?: boolean;
+  }>;
+
+  columns: Map<number, {
+    level: number;
+    collapsed: boolean;
+    hidden: boolean;
+    summaryRight?: boolean;
+  }>;
+
+  options: {
+    summaryBelow: boolean;
+    summaryRight: boolean;
+    autoOutline: boolean;
+    showLevels: {
+      rows: number;
+      columns: number;
+    };
+  };
+
+  view: {
+    showOutlineSymbols: boolean;
+    autoShowOutlineSymbols: boolean;
+  };
+}
+
+export interface GroupState {
+  type: 'row' | 'column';
+  start: number;
+  end: number;
+  level: number;
+  collapsed?: boolean;
+  hidden?: boolean;
+  parent?: number;
+  children?: number[];
+}
