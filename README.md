@@ -1,5 +1,7 @@
 # EEEP!
 
+> ⚠️ Not quite done. Its too late to make this pretty.
+
 A TypeScript implementation inspired by the EPPlus .NET library for Excel manipulation.
 
 ## Installation
@@ -33,7 +35,9 @@ const buffer = package.saveAs('example.xlsx');
 - Add/remove worksheets
 - Read and write cell values
 - Save workbooks as XLSX files
+- Maybe other stuff if it actually works
 
-## License
 
-MIT
+## Support
+
+GL
